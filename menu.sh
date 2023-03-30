@@ -173,14 +173,12 @@ WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipv4.icanhazip.com )
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
-	echo " "
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 	tram=$( free -m | awk 'NR==2 {print $2}' )
 	swap=$( free -m | awk 'NR==4 {print $2}' )
 	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
-
 	echo -e "\e[032;1mCPU Model:\e[0m $cname"
 	echo -e "\e[032;1mNumber Of Cores:\e[0m $cores"
 	echo -e "\e[032;1mCPU Frequency:\e[0m $freq MHz"
@@ -220,33 +218,33 @@ echo -e " 7.  AUTO REBOOT"
 
 echo -e " 8.  REBOOT"
 
-echo -e " 9.   RESTART SERVICE"
+echo -e " 9.  RESTART SERVICE"
 
-echo -e " 10.  BACKUP DATA VPS"
+echo -e " 10. BACKUP DATA VPS"
 
-echo -e " 11.  CHANGE DOMAIN VPS"
+echo -e " 11. CHANGE DOMAIN VPS"
 
-echo -e " 12.  CERT DOMAIN VPS"
+echo -e " 12. CERT DOMAIN VPS"
 
-echo -e " 13.  CHANGE BANNER"
+echo -e " 13. CHANGE BANNER"
 
-echo -e " 14.  CEK RUNNING SERVICE"
+echo -e " 14. CEK RUNNING SERVICE"
 
-echo -e " 15.  CEK TRAFIC"
+echo -e " 15. CEK TRAFIC"
 
-echo -e " 16.  SPEEDTEST VPS"
+echo -e " 16. SPEEDTEST VPS"
 
-echo -e " 17.  CEK BANDWIDTH"
+echo -e " 17. CEK BANDWIDTH"
 
-echo -e " 18.  LIMIT SPEED"
+echo -e " 18. LIMIT SPEED"
 
-echo -e " 19.  WEBMIN"
+echo -e " 19. WEBMIN"
 
-echo -e " 20.  INFO SCRIPT VPS"
+echo -e " 20. INFO SCRIPT VPS"
 
-echo -e " 21.  CLEAR LOG"
+echo -e " 21. CLEAR LOG"
 
-echo -e " 22.  CHANGE PASSWORD VPS"
+echo -e " 22. CHANGE PASSWORD VPS"
 
 echo -e "\e[32mContact @aixxy7 t.me/aixxy7\e[m"
 
