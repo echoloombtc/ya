@@ -202,23 +202,23 @@ echo -e "${BIBlue} Today   : $ttoday"
 echo -e "${BIBlue} Monthly : $tmon"
 echo -e "Menu Utama" | lolcat -a -d 10
 
-echo -e " 1.  SSH MENU"
+echo -e " 1.  SSH-OPVN [MENU]"
 
-echo -e " 2.  VMESS MENU"
+echo -e " 2.  X VMESS  [MENU]"
 
-echo -e " 3.  VLESS MENU"
+echo -e " 3.  X VLESS  [MENU]"
 
-echo -e " 4.  TROJAN MENU"
+echo -e " 4.  X TROJAN [MENU]"
 
-echo -e " 5.  S-SOCK MENU"
+echo -e " 5.  X SOCKS  [MENU]"
 
-echo -e " 6.  TENDANG"
+echo -e " 6.  DELETE USER"
 
-echo -e " 7.  AUTO REBOOT"
+echo -e " 7.  SET AUTO REBOOT"
 
-echo -e " 8.  REBOOT"
+echo -e " 8.  REBOOT VPS"
 
-echo -e " 9.  RESTART SERVICE"
+echo -e " 9.  RESTART ALL SERVICE"
 
 echo -e " 10. BACKUP DATA VPS"
 
@@ -245,6 +245,22 @@ echo -e " 20. INFO SCRIPT VPS"
 echo -e " 21. CLEAR LOG"
 
 echo -e " 22. CHANGE PASSWORD VPS"
+
+echo -e " 23. CHANGE DNS "
+
+echo -e " 24. Media Stream Unlocker"
+
+echo -e " 25. Limit-User Torrent"
+
+echo -e " 26. ADS Blok Menu"
+
+echo -e " 27. ADD-BOT TELEGRAM [SOON]"
+
+echo -e " 28. CEK-PENGGUNA STB [SOON]"
+
+echo -e " 29. ADD-CLOUDFLARE WARP [SOON]"
+
+echo -e " 30. AUTO-KILL Menu NOTIFIKASI TELEGRAM [SOON]"
 
 echo -e "\e[32mContact @aixxy7 t.me/aixxy7\e[m"
 
@@ -385,6 +401,12 @@ clearlog
 22)
 
 passwd
+
+;;
+
+23)
+
+BotTelegram
 
 ;;
 
