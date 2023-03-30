@@ -173,8 +173,6 @@ WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipv4.icanhazip.com )
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
-	echo "--------------- Welcome Premium Script -------------------"
-	echo "--------------- Kenn Hiroyuki x Alexxa -------------------"
 	echo " "
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
@@ -222,10 +220,6 @@ echo -e " 7.  AUTO REBOOT"
 
 echo -e " 8.  REBOOT"
 
-echo -e ""
-
-echo -e "Menu Tambahan" | lolcat -a -d 10
-
 echo -e " 9.   RESTART SERVICE"
 
 echo -e " 10.  BACKUP DATA VPS"
@@ -254,11 +248,7 @@ echo -e " 21.  CLEAR LOG"
 
 echo -e " 22.  CHANGE PASSWORD VPS"
 
-echo -e "\e[32m-----------------------------------------------------\e[m"
-
-echo -e " x.   Exit "
-
-echo -e "\e[32m-----------------------------------------------------\e[m"
+echo -e "\e[32mContact @aixxy7 t.me/aixxy7\e[m"
 
 echo -e ""
 
