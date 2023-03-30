@@ -195,12 +195,15 @@ tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | 
 	date | lolcat
 	echo -e "-----------------------------------------------------"
 echo -e "STATUS SERVICE"
-echo -e " ${BIRed} SSH         ${NC}: $ressh"
-echo -e " ${BIRed} NGINX       ${NC}: $resngx"
-echo -e " ${BIRed} XRAY        ${NC}: $resv2r"
-echo -e " ${BIRed} TROJAN     ${NC}: $resv2r"
-echo -e " ${BIRed} DROPBEAR   ${NC}: $resdbr"
-echo -e " ${BIRed} SSH-WS      ${NC}: $ressshws"
+echo -e "${BIRed} SSH     ${NC}: $ressh"
+echo -e "${BIRed} NGINX   ${NC}: $resngx"
+echo -e "${BIRed} XRAY    ${NC}: $resv2r"
+echo -e "${BIRed} TROJAN  ${NC}: $resv2r"
+echo -e "${BIRed} DROPBEAR${NC}: $resdbr"
+echo -e "${BIRed} SSH-WS  ${NC}: $ressshws"
+echo -e "PENGGUNAAN BANDWIDTH"
+echo -e "${BIRed} Today   : $ttoday"
+echo -e "${BIRed} Monthly : $tmon"
 echo -e "Menu Utama" | lolcat -a -d 10
 
 echo -e " 1.  SSH MENU"
