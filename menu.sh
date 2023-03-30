@@ -171,6 +171,8 @@ ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipv4.icanhazip.com )
+ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
+tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
 	echo "--------------- Welcome Premium Script -------------------"
 	echo "--------------- Kenn Hiroyuki x Alexxa -------------------"
 	echo " "
@@ -185,7 +187,6 @@ IPVPS=$(curl -s ipv4.icanhazip.com )
 	echo -e "\e[032;1mNumber Of Cores:\e[0m $cores"
 	echo -e "\e[032;1mCPU Frequency:\e[0m $freq MHz"
 	echo -e "\e[032;1mTotal Amount Of RAM:\e[0m $tram MB"
-	echo -e "\e[032;1mTotal Amount Of Swap:\e[0m $swap MB"
 	echo -e "\e[032;1mSystem Uptime:\e[0m $up"
 	echo -e "\e[032;1mIsp Name:\e[0m $ISP"
 	echo -e "\e[032;1mCity:\e[0m $CITY"
@@ -193,9 +194,12 @@ IPVPS=$(curl -s ipv4.icanhazip.com )
 	echo -e "\e[033;1mIPVPS:\e[0m $IPVPS"
 	date | lolcat
 	echo -e "-----------------------------------------------------"
-
-echo -e ""
-
+echo -e " ${BIRed} SSH         ${NC}: $ressh"
+echo -e " ${BIRed} NGINX       ${NC}: $resngx"
+echo -e " ${BIRed} XRAY        ${NC}: $resv2r"
+echo -e " ${BIRed} TROJAN     ${NC}: $resv2r"
+echo -e " ${BIRed} DROPBEAR   ${NC}: $resdbr"
+echo -e " ${BIRed} SSH-WS      ${NC}: $ressshws"
 echo -e "Menu Utama" | lolcat -a -d 10
 
 echo -e " 1.  SSH MENU"
@@ -224,27 +228,27 @@ echo -e " 10.  BACKUP DATA VPS"
 
 echo -e " 11.  CHANGE DOMAIN VPS"
 
-echo -e " 12.  Autobackup Data VPS"
+echo -e " 12.  CERT DOMAIN VPS"
 
-echo -e " 13.  Backup Data VPS"
+echo -e " 13.  CHANGE BANNER"
 
-echo -e " 14.  Restore Data VPS"
+echo -e " 14.  CEK RUNNING SERVICE"
 
-echo -e " 15.  Webmin Menu"
+echo -e " 15.  CEK TRAFIC"
 
-echo -e " 16.  Limit Bandwith Speed Server"
+echo -e " 16.  SPEEDTEST VPS"
 
-echo -e " 17.  Check Usage of VPS Ram"
+echo -e " 17.  CEK BANDWIDTH"
 
-echo -e " 18.  Reboot VPS"
+echo -e " 18.  LIMIT SPEED"
 
-echo -e " 19.  Speedtest VPS"
+echo -e " 19.  WEBMIN"
 
-echo -e " 20.  Information Display System"
+echo -e " 20.  INFO SCRIPT VPS"
 
-echo -e " 21.  Info Script Auto Install"
+echo -e " 21.  CLEAR LOG"
 
-echo -e " 22.  Restart All Service"
+echo -e " 22.  CHANGE PASSWORD VPS"
 
 echo -e "\e[32m══════════════════════════════════════════\e[m"
 
