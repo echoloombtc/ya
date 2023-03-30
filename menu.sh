@@ -246,20 +246,6 @@ echo -e " 21.  Info Script Auto Install"
 
 echo -e " 22.  Restart All Service"
 
-echo -e " 23.  Set Auto Reboot"
-
-echo -e " 24.  Set Multi Login Akun"
-
-echo -e " 25.  Install BBR"
-
-echo -e " 26.  Add ID Cloudfare"
-
-echo -e " 27.  Cloudfare Add-Ons"
-
-echo -e " 28.  Pointing Bug"
-
-echo -e " 29.  Status Tunneling"
-
 echo -e "\e[32m══════════════════════════════════════════\e[m"
 
 echo -e " x.   Exit "
