@@ -342,109 +342,67 @@ addhost
 
 12)
 
-autobackup
+genssl
 
 ;;
 
 13)
 
-backup
+nano /etc/issue.net
 
 ;;
 
 14)
 
-restore
+running
 
 ;;
 
 15)
 
-wbmn
+cek-trafik
 
 ;;
 
 16)
 
-limit-speed
+cek-speed
 
 ;;
 
 17)
 
-ram
+cek-bandwidth
 
 ;;
 
 18)
 
-reboot
+limit-speed
 
 ;;
 
 19)
 
-speedtest
+wbm
 
 ;;
 
 20)
 
-info
+cat /root/log-install.txt
 
 ;;
 
 21)
 
-about
+clearlog
 
 ;;
 
 22)
 
-restart
-
-;;
-
-23)
-
-auto-reboot
-
-;;
-
-24)
-
-autokill
-
-;;
-
-25)
-
-bbr
-
-;;
-
-26)
-
-cff
-
-;;
-
-27)
-
-cfd
-
-;;
-
-28)
-
-cfh
-
-;;
-
-29)
-
-running
+passwd
 
 ;;
 
