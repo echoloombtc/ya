@@ -254,13 +254,17 @@ echo -e " 25. Limit-User Torrent"
 
 echo -e " 26. ADS Blok Menu"
 
-echo -e " 27. ADD-BOT TELEGRAM [SOON]"
+echo -e " 27. Change Xray-core Mod"
 
-echo -e " 28. CEK-PENGGUNA STB [SOON]"
+echo -e " 28. Pointing BUG/Host"
 
-echo -e " 29. ADD-CLOUDFLARE WARP [SOON]"
+echo -e " 29. ADD-BOT TELEGRAM [SOON]"
 
-echo -e " 30. AUTO-KILL Menu NOTIFIKASI TELEGRAM [SOON]"
+echo -e " 30. CEK-PENGGUNA STB [SOON]"
+
+echo -e " 31. ADD-CLOUDFLARE WARP [SOON]"
+
+echo -e " 32. AUTO-KILL Menu NOTIFIKASI TELEGRAM [SOON]"
 
 echo -e "\e[32mContact @aixxy7 t.me/aixxy7\e[m"
 
