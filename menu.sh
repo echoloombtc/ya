@@ -202,8 +202,8 @@ echo -e "${BIRed} TROJAN  ${NC}: $resv2r"
 echo -e "${BIRed} DROPBEAR${NC}: $resdbr"
 echo -e "${BIRed} SSH-WS  ${NC}: $ressshws"
 echo -e "PENGGUNAAN BANDWIDTH"
-echo -e "${BIRed} Today   : $ttoday"
-echo -e "${BIRed} Monthly : $tmon"
+echo -e "${BIBlue} Today   : $ttoday"
+echo -e "${BIBlue} Monthly : $tmon"
 echo -e "Menu Utama" | lolcat -a -d 10
 
 echo -e " 1.  SSH MENU"
